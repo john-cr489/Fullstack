@@ -1,0 +1,26 @@
+body {
+    background-color: bisque; 
+    color: gray;          
+}
+.grifo{
+    background-color: gray;
+    border-radius: 35px, 35px, 35px;
+    color:aquamarine;
+}
+.imagens{
+        display: flex;
+}
+.imagens2{
+    display: flex;
+}
+.Links{
+    display: flex ;
+}
+/*project.1.html*/
+.text2{
+    background-color: darkgray;
+    color: aquamarine;
+}
+.Tabela{
+    padding: 0%;
+}

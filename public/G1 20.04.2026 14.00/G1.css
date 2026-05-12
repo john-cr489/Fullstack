@@ -1,0 +1,126 @@
+/* Configurações gerais da página */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Define uma fonte limpa como a da imagem */
+}
+
+/* Estilo da barra principal */
+.topo {
+    background-color: white;
+    display: flex;            /* Ativa o Flexbox para alinhar itens em linha */
+    /*justify-content: center;  /* Centraliza o bloco de links na tela */
+    /*align-items: center;      /* Alinha os itens verticalmente ao centro */
+    margin: 15px;
+    gap: 20px;                /* Cria um espaço fixo de 20px entre cada item */
+    padding: 15px 0;          /* Dá um respiro em cima e embaixo da barra */
+}
+
+/* Regra CRUCIAL: Estilizando todos os links dentro da div .topo */
+.topo a {
+    text-decoration: none;    /* Remove o sublinhado azul padrão dos links */
+    font-weight: bold;        /* Deixa o texto em negrito */
+}
+
+/* Ajuste nos títulos h4 */
+.topo h4 {
+    margin: 0;                /* Remove espaços automáticos que o navegador cria no h4 */
+    font-size: 16px;          /* Ajusta o tamanho da letra */
+}
+
+/* CORES ESPECÍFICAS:
+   Para mudar a cor de um link, precisamos selecionar a tag 'a' 
+   que está dentro da div. Se colocar a cor apenas na div, 
+   o navegador ignora e usa o azul padrão do link.
+*/
+
+.gcom a { color: #0067b7; }    /* Azul padrão Globo */
+.G1 a { color: #c4170c; }      /* Vermelho vibrante do G1 */
+.ge a { color: #00a859; }      /* Verde do Globo Esporte */
+.gs a { color: #ff8000; }      /* Laranja do Gshow */
+.gp a { color: #fb0334; }      /* Rosa/Vermelho do Globoplay */
+.jogos a { color: #c4170c; }   /* Mesmo vermelho do G1 */
+.oglobo a { color: #0054a6; }  /* Azul escuro do Jornal O Globo */
+.ovalor a { color: #006b85; }  /* Azul acinzentado do Valor Econômico */
+
+/* Efeito visual: quando o mouse passa por cima, o link fica levemente transparente */
+.topo a:hover {
+    opacity: 0.6; /* Quando o mouse passa em cima, o link fica 40% transparente */
+    transition: 0.2s;          /* Deixa a mudança suave */
+}
+.Menu{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.noticias1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Container principal que segura todos os elementos (imagem, selo e textos) */
+
+.trem1{
+  position: relative; /* Necessário para que os elementos internos com 'absolute' se alinhem a ele */
+  width: 100%;
+  max-width: 800px; /* Limita a largura máxima para não esticar demais em telas grandes */
+  aspect-ratio: 16 / 9; /* Define a proporção de tela de cinema/TV (evita que a altura varie) */
+  overflow: hidden; /* Garante que nada saia das bordas (como cantos arredondados ou imagens maiores) */
+  font-family: sans-serif;
+  color: white;
+    }
+
+/* Estilização da imagem que fica ao fundo */
+.imagem-fundo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Faz a imagem cobrir todo o espaço sem achatar ou esticar, cortando as bordas se necessário */
+}
+
+/* Selo "AO VIVO" ou similar no canto superior */
+.selo-ao-vivo {
+  position: absolute; /* Retira do fluxo normal e permite posicionar em qualquer lugar sobre o container */
+  top: 20px; /* Distância do topo */
+  left: 20px; /* Distância da esquerda */
+  background-color: red;
+  padding: 5px 12px; /* Espaçamento interno (respiro) do texto */
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 4px; /* Arredonda levemente os cantos do selo */
+  text-transform: uppercase; /* Força o texto a ficar em letras MAIÚSCULAS */
+}
+
+/* Camada escura transparente para dar contraste ao texto branco */
+.gradiente-sombra {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%; /* Cobre apenas a metade inferior (onde fica o texto) */
+  /* Cria um degradê que vai do preto (80% opaco) na base até o transparente no topo */
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%);
+}
+
+/* Bloco que agrupa o Título e o Parágrafo */
+.conteudo {
+  position: absolute;
+  bottom: 30px; /* Fixa o texto na parte de baixo */
+  left: 30px;
+  right: 30px;
+}
+
+/* Estilo do Título Principal */
+.conteudo h1 {
+  font-size: 3rem; /* Tamanho de fonte bem grande e impactante */
+  margin: 0 0 15px 0; /* Remove margens superiores e laterais, adiciona espaço abaixo */
+  line-height: 1.1; /* Deixa as linhas do título bem próximas uma da outra */
+  font-weight: 800; /* Deixa a fonte extra negrito */
+}
+
+/* Estilo da descrição/subtítulo */
+.conteudo p {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  max-width: 90%; /* Impede que o texto encoste na borda direita, melhorando a estética */
+  opacity: 0.9; /* Deixa o texto levemente esbranquiçado/transparente para não brigar com o H1 */
+}

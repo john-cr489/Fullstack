@@ -1,0 +1,70 @@
+/* Importando uma fonte moderna e elegante que combina com o tema marrom */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+body {
+    background-color: #fdf5e6; /* Fundo creme suave combinado com a tabela */
+    transition: background-color 0.5s; 
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center; 
+    min-height: 100vh;      
+}
+
+.Kablammo {
+   
+    font-family: "Inter", sans-serif;
+    font-weight: 800; /* Deixa a fonte mais grossa e marcante */
+    color: #5d4037;   /* Marrom escuro para combinar com o cabeçalho da tabela */
+    font-size: 40px; 
+    text-align: center;
+    margin-bottom: 30px; 
+    letter-spacing: 1px; /* Espaçamento elegante entre as letras */
+    /* Removido o brilho neon antigo por uma sombra sutil e limpa */
+    text-shadow: 2px 2px 4px rgba(93, 64, 55, 0.1); 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; 
+    padding: 20px;
+}
+
+input {
+    padding: 12px;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    /* Borda marrom clara arredondada */
+    border: 2px solid #d7ccc8; 
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s;
+    width: 250px;
+}
+
+input:focus {
+    border-color: #5d4037; /* Escurece a borda ao clicar */
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #8d6e63; /* Marrom médio */
+    color: white;
+    border: none;
+    border-radius: 12px; /* Botão arredondado combinando com a tabela */
+    box-shadow: 0 4px 6px rgba(93, 64, 55, 0.15);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #5d4037; /* Marrom escuro ao passar o mouse */
+    transform: translateY(-2px); /* Efeito suave de levante */
+    box-shadow: 0 6px 12px rgba(93, 64, 55, 0.2);
+}
